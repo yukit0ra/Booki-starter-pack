@@ -352,7 +352,7 @@ input::placeholder {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 380px;
-    width: 297.5px;
+    max-width: 297.5px;
     object-fit: cover;
 }
 
