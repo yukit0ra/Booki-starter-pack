@@ -379,6 +379,10 @@ footer {
     width: 446.67px;
 }
 
+.search-bar button img {
+    display: none;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -495,7 +499,15 @@ footer {
     .search-bar button {
         width: 49px;
         height: 49px;
-        background-image: url("./images/logo/search.png");
-        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+
+    .search-bar button img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .search-bar {
+        justify-content: center;
     }
 }
