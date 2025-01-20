@@ -379,12 +379,6 @@ footer {
     width: 446.67px;
 }
 
-
-
-
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -443,6 +437,65 @@ footer {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .main-container {
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        
+    }
+
+    .logo {
+        text-align: center;
+        padding: 30px;
+    }
+
+    .logo img {
+       padding-top: 0;
+    }
+
+    .menu {
+        width: 100%;
+        gap: 0;
+    }
+
+    .menu a {
+        width: 50%;
+        justify-content: center;
+        padding: 0;
+        padding-bottom: 15px;
+        border-bottom: 2px solid var(--main-bg-color);
+        border-top: none;
+        height: 100%;
+    }
+
+    .menu a:hover {
+        border-top: none;
+        border-bottom: 2px solid var(--main-color);
+    }
+
+    .info-group .section-title {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    div.info-group > p.text-normal {
+        padding-left: 20px;
+    }
+
+    .search-text {
+        display: none;
+    }
+
+    .search-bar button {
+        width: 49px;
+        height: 49px;
+        background-image: url("./images/logo/search.png");
+        background-repeat: no-repeat;
+    }
 }
