@@ -629,4 +629,22 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+    .afficher-plus {
+        margin-top: 0;
+    }
+
+    .activites-card {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .activites-card .cards {
+        max-width: 100%;
+    }
+
+    .activites-card-container img {
+        max-height: 141px;
+        min-height: auto;
+    }
 }
