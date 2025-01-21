@@ -580,7 +580,7 @@ footer {
     }
 
     .hebergements-and-populaires section {
-        border-radius: 0;
+        border-radius: 0;  
     }
 
     .hebergements-and-populaires .populaires {
@@ -589,6 +589,7 @@ footer {
 
     .hebergements-and-populaires .hebergements {
         padding: 20px;
+        background-color: transparent;
     }
 
     .populaires {
@@ -612,5 +613,20 @@ footer {
 
     .hebergements {
         order: 2;
+        background-color: transparent;
+        width: 100%;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-cards .card {
+        margin-top: 0;
+    }
+
+    .hebergements-cards {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
     }
 }
