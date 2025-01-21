@@ -115,6 +115,10 @@ main {
     color: black;
 }
 
+.search-text {
+    display: inline-block;
+}
+
 .search-bar button {
     height: 49px;
     width: 132px;
@@ -126,6 +130,10 @@ main {
     font-size: 18px;
     text-align: center;
     border: 0;
+}
+
+.search-bar button img {
+    display: none;
 }
 
 input::placeholder {
@@ -379,12 +387,6 @@ footer {
     width: 446.67px;
 }
 
-.search-bar button img {
-    display: none;
-}
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -442,7 +444,7 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767.98px) {
     .main-container {
         padding: 0;
     }
@@ -492,6 +494,23 @@ footer {
         padding-left: 20px;
     }
 
+    .search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    .search-bar form {
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 100%;
+        border-radius: 15px;
+        text-align: start;
+        padding-left: 24px;
+    }
+
     .search-text {
         display: none;
     }
@@ -500,14 +519,51 @@ footer {
         width: 49px;
         height: 49px;
         border-radius: 15px;
+        position: absolute;
+        right: 0px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+
     }
 
     .search-bar button img {
         width: 17px;
         height: 17px;
+        display: inline-block;
     }
 
-    .search-bar {
-        justify-content: center;
+    .filter-bar {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 20px;
+    }
+
+    .filter-bar p {
+        width: 100%;   
+    }
+
+    .filter_line1 {
+        width: 100%;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .filter {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .filter_line2 {
+        width: 100%;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .info-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        flex: 1;
     }
 }
