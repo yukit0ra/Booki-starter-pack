@@ -9,6 +9,10 @@
     display: flex;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .width-full {
     width: 100%;
 }
@@ -86,10 +90,6 @@ a {
 
 main {
     margin-top: 30px;
-}
-
-.info-group {
-    flex-direction: column ;
 }
 
 .info-group img {
@@ -237,7 +237,6 @@ input::placeholder {
 
 .hebergements-cards .card {
     margin-top: 30px;
-    flex-direction: column;
 }
 
 .hebergements-cards img {
@@ -251,21 +250,16 @@ input::placeholder {
 .hebergements-cards .card-content {
     padding-right: 15px;
     padding-left: 15px;
-    flex-direction: column;
     box-sizing: border-box;
 }
 
-.hebergements-cards .card-txt {
-    flex-direction: column; 
-}
-
-.hebergements-cards .card-subtitle {
+.card-subtitle {
     font-size: 14px;
     line-height: 16.44px;
 }
 
 .hebergements-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     height: 13.25px;
 }
 
@@ -294,7 +288,6 @@ input::placeholder {
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
-    flex-direction: column;
     box-sizing: border-box;
 }
 
@@ -303,9 +296,7 @@ input::placeholder {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
+
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
@@ -365,26 +356,19 @@ footer {
     
 }
 
-.footer-subtitle {
-    flex-direction: column;  
-}
-
 .footer-title {
     padding-bottom: 15px;
 }
 
 .a-propos {
-    flex-direction: column;
     width: 446.67px;
 }
 
 .nos-hebergements {
-    flex-direction: column;
     width: 446.67px;
 }
 
 .assistance {
-    flex-direction: column;
     width: 446.67px;
 }
 
@@ -416,7 +400,6 @@ footer {
     }
 
     .populaires-cards {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -590,14 +573,10 @@ footer {
         width: 100%;
         margin-bottom: 15px;
         gap: 15px;
-        display: flex;
-        flex-direction: column;
     }
 
     .populaires-cards {
         gap: 15px;
-        display: flex;
-        flex-direction: column;
     }
 
     .populaires-cards .card {
@@ -609,7 +588,6 @@ footer {
         background-color: transparent;
         width: 100%;
         gap: 15px;
-        display: flex;
         flex-direction: column;
     }
 
